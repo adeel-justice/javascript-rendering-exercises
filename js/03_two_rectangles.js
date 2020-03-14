@@ -4,12 +4,6 @@
     // TODO: Your code goes here.
     return `
   <div style="
-    width: ${orangeRectangle.width}px;
-    height: ${orangeRectangle.height}px;
-    background-color: ${orangeRectangle.color};
-    ">
-  </div>
-  <div style="
     width: ${rectangle.width}px;
     height: ${rectangle.height}px;
     background-color: ${rectangle.color};
@@ -40,8 +34,7 @@
     const orangeRectangleHTML = buildRectangleHTML(orangeRectangle)
     const blueRectangleHTML = buildRectangleHTML(blueRectangle)
     // TODO: your code goes here
-    contentElement.innerHTML = orangeRectangleHTML
-    contentElement.innerHTML = blueRectangleHTML
+    contentElement.innerHTML = orangeRectangleHTML + blueRectangleHTML
   }
 
   // attach an event handler for button click
